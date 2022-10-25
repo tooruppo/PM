@@ -1,0 +1,35 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+$fa-font-path: "../webfonts"; // 追加
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+// @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~bootstrap/scss/carousel";
+
+// 追加始まり
+// FontAwesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+//ここから追加
+@import "top";
+
+@import "sign_up";
+
+@import "sign_in";
+
+@import "show";
+
+@import "edit";
+
+@import "kintai";
+
+// 追加終わり
