@@ -4,13 +4,13 @@
 
 <div class='userInfo col-5 mx-auto'>
     <div class='userInfo_img'>
-        <img src="/storage/images/{{$user -> img_name}}">
+        <img src="storage/images/{{$user -> img_name}}">
     </div>
     <div class='userInfo_name'>{{ $user -> name }}</div>
     <div class='userInfo_employee_num'>職番：{{ $user -> employee_num }}</div>
     <div class="row d-flex justify-content-evenly mb-3 mt-5">
         <div class="col">
-            <a href="/users/edit/{{$user->id}}">
+            <a href="users/edit/{{$user->id}}">
                 <button class="btn btn-secondary btn-lg w-100" type="submit">
                     <i class="bi bi-pencil" style="font-size:1.5em; color:#fff;"></i>
                     <br><span class="fs-2">情報を編集</span>

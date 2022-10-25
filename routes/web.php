@@ -61,7 +61,7 @@ Route::group(['prefix' => 'users', 'middleware' => 'auth'], function () {
 |--------------------------------------------------------------------------
 */
 Route::group(['prefix' => 'admin'], function() {
-    Route::get('/',         function () { return redirect('/admin/top'); });
+    Route::get('/',         function () { return redirect('admin/top'); });
     Route::get('login',     'Admin\LoginController@showLoginForm')->name('admin.login');
     Route::post('login',    'Admin\LoginController@login');
 });
