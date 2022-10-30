@@ -44,7 +44,7 @@
 
             <div class="row">
                 <div class="col mt-1" style="margin-bottom:-15px">
-                    <form class="d-flex" action="/users/jisseki/{{Auth::id()}}" method="get">
+                    <form class="d-flex" action="{{ route('users.jisseki', ['id'=> auth()->id()]) }}" method="get">
                         <div class="col-3 d-flex">
                             <p>３か月表示最終月：</p>
                             <input class="form-control" name="atmonth" type="month" max="{{date("Y-m")}}" value="{{$this_month}}">

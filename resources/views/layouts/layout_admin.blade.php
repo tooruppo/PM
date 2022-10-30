@@ -12,6 +12,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
@@ -21,7 +22,7 @@
             <header class="header">
                 <p class='header_logo'>
                     <a href="{{ route('home') }}">
-                        <img src="/storage/images/artiz.jpg">
+                        <img src="{{ asset('storage/images/Logo.png') }}">
                     </a>
                 </p>
             </header>

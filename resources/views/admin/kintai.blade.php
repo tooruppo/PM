@@ -39,7 +39,7 @@
             } else {
                 $this_name = null;
                 $this_employee_num = null;
-                $this_id = null;
+                $this_id = '1';
             }
             // 修正氏名の選択end
 
@@ -75,7 +75,7 @@
         @endphp
 
         <div class="row">
-            <form class="form w-100" method="get" onsubmit="return false;" action="/admin/kintai/{{Auth::id()}}" >
+            <form class="form w-100" method="get" onsubmit="return false;" action="{{ route('admin.kintai', ['id'=> auth()->id()]) }}" >
                 <table class="table">
                     <tr>
                         <th>対象者</th>
@@ -120,7 +120,7 @@
         </div>
 
         <div class="row">
-            <form class="form mt-5 w-100" method="POST" onsubmit="return false;" action="/admin/update/{{ $this_id ?? ''}}">
+            <form class="form mt-5 w-100" method="POST" onsubmit="return false;" action="{{ route('admin.update', ['id'=> $this_id]) }}">
                 @csrf
                 <table class="table">
                     <tr>

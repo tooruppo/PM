@@ -10,13 +10,13 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" alt="First slide" src="storage/images/slider_01.webp">
+            <img class="d-block w-100" alt="First slide" src="{{ asset('storage/images/slider_01.webp') }}">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" alt="Second slide" src="storage/images/slider_02.webp">
+            <img class="d-block w-100" alt="Second slide" src="{{ asset('storage/images/slider_02.webp') }}">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" alt="Third slide" src="storage/images/slider_03.webp">
+            <img class="d-block w-100" alt="Third slide" src="{{ asset('storage/images/slider_03.webp') }}">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">

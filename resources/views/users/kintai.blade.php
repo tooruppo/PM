@@ -63,7 +63,7 @@
         @endphp
 
 
-            <form class="form w-100" action="/users/kintai/{{Auth::id()}}" method="get">
+            <form class="form w-100" action="{{ route('users.kintai', ['id'=> auth()->id()]) }}" method="get">
                 <table class="table">
                     <tr>
                         <th>表示月：</th>
@@ -79,7 +79,7 @@
             </form>
 
 
-        <form class="form mt-5 w-100" method="POST" action="users/update/{{ $item->id }}">
+        <form class="form mt-5 w-100" method="POST" action="{{ route('users.update', ['id'=> $item->id]) }}">
             @csrf
             <table class="table">
                 <tr>

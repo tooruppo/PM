@@ -14,7 +14,7 @@ class KintaiController extends Controller
 {
     public function show()
     {
-        $items = User::where('id', '!=', null)
+        $items = User::where('users.id', '!=', null)
             ->leftjoin('dayworkhours', 'users.employee_num', '=', 'dayworkhours.employee_num')
             ->where('date', '!=', null)
             ->where('date', '<=', date('Y-m-d'))
@@ -25,7 +25,7 @@ class KintaiController extends Controller
 
     public function index()
     {
-        $items = User::where('id', '!=', null)
+        $items = User::where('users.id', '!=', null)
             ->leftjoin('dayworkhours', 'users.employee_num', '=', 'dayworkhours.employee_num')
             ->orderBy('date')
             ->get();

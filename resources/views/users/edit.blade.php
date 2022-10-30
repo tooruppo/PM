@@ -6,7 +6,7 @@
         <div>プロフィールを編集</div>
     </header>
 
-    <form class="form mt-5" method="POST" action="/users/update/{{ $user->id }}" enctype="multipart/form-data">
+    <form class="form mt-5" method="POST" action="{{ route('users.update', ['id'=> $user->id]) }}" enctype="multipart/form-data">
         @csrf
 
         @error('email')
@@ -58,7 +58,7 @@
                 </button>
             </div>
             <div class="col">
-                <a href="/users/show/{{Auth::id()}}">
+                <a href="{{ route('users.show', ['id'=> $user->id]) }}">
                     <button class="btn btn-info btn-lg w-100" type="button">
                         <i class="bi bi-x-square" style="font-size:1.5em; color:#fff;"></i>
                         <br><span class="fs-2 text-white">キャンセル</span>

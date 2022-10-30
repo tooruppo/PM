@@ -18,7 +18,7 @@ Auth::routes();
 | 1) User 認証不要
 |--------------------------------------------------------------------------
 */
-Route::get('/', function () { return view('top');});
+Route::get('/', function () { return view('top');})->name('top');
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ Route::get('/', function () { return view('top');});
 |--------------------------------------------------------------------------
 */
 Route::group(['middleware' => 'auth:user'], function() {
-    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('home', 'HomeController@index')->name('home');
 });
 
 /*
@@ -57,7 +57,7 @@ Route::group(['prefix' => 'users', 'middleware' => 'auth'], function () {
 |--------------------------------------------------------------------------
 */
 Route::group(['prefix' => 'admin'], function() {
-    Route::get('/',         function () { return redirect('admin/top'); });
+    Route::get('/',         function () { return redirect('/admin/top'); })->name('admin.top');
     Route::get('login',     'Admin\LoginController@showLoginForm')->name('admin.login');
     Route::post('login',    'Admin\LoginController@login');
 });

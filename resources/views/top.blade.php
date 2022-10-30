@@ -33,7 +33,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <img class="d-block w-100" src="storage/images/slider_01.webp">
+            <img class="d-block w-100" src="{{ asset('storage/images/slider_01.webp') }}">
         </div>
     </div>
 </div>

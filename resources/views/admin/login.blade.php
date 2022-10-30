@@ -38,7 +38,7 @@
                         </button>
                     </div>
                     <div class="col">
-                        <a href="/">
+                        <a href="{{ route('top') }}">
                             <button class="btn btn-danger btn-sm w-100" type="button">
                                 <i class="bi bi-clock" style="font-size:1.5em; color:#fff;"></i>
                                 <br><span class="fs-2">戻る</span>
