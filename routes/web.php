@@ -47,13 +47,9 @@ Route::group(['prefix' => 'users', 'middleware' => 'auth'], function () {
 */
 Route::group(['prefix' => 'users', 'middleware' => 'auth'], function () {
     Route::get('kintai/{id}', 'KintaiController@show')->name('users.kintai');
+    Route::get('jisseki/{id}', 'KintaiController@index')->name('users.jisseki');
     Route::post('update/{id}', 'KintaiController@update')->name('users.update');
 });
-
-Route::group(['prefix' => 'users', 'middleware' => 'auth'], function () {
-    Route::get('jisseki/{id}', 'KintaiController@index')->name('users.jisseki');
-});
-
 
 /*
 |--------------------------------------------------------------------------
@@ -83,10 +79,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function() {
 */
 Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
     Route::get('kintai/{id}', 'Admin\KintaiController@show')->name('admin.kintai');
+    Route::get('jisseki/{id}', 'Admin\KintaiController@index')->name('admin.jisseki');
     Route::post('update/{id}', 'Admin\KintaiController@update')->name('admin.update');
 });
-
-Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
-    Route::get('jisseki/{id}', 'Admin\KintaiController@index')->name('admin.jisseki');
-});
-

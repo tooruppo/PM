@@ -21,7 +21,7 @@
             <header class="header">
                 <p class='header_logo'>
                     <a href="{{ route('home') }}">
-                        <img src="/storage/images/artiz.jpg">
+                        <img src="storage/images/artiz.jpg">
                     </a>
                 </p>
             </header>

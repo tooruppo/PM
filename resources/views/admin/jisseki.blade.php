@@ -603,7 +603,7 @@
                                         echo 'title: "【全員】の', $this_graph_title, '",';
                                         echo 'legend: { position: "top", maxLines:10 },';
                                         echo 'isStacked: true';
-                                    };
+                                    }
                                 ?>
                             };
                             var chart = new google.visualization.BarChart(document.getElementById("chartPNG"));

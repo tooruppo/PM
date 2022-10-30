@@ -79,7 +79,7 @@
             </form>
 
 
-        <form class="form mt-5 w-100" method="POST" action="/users/update/{{ $item->id }}">
+        <form class="form mt-5 w-100" method="POST" action="users/update/{{ $item->id }}">
             @csrf
             <table class="table">
                 <tr>

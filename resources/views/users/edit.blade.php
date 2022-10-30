@@ -52,12 +52,10 @@
 
         <div class="row d-flex justify-content-evenly mb-3">
             <div class="col">
-                <a href="/users/jisseki/{{Auth::id()}}">
-                    <button class="btn btn-secondary btn-lg w-100" type="submit">
-                        <i class="bi bi-pencil" style="font-size:1.5em; color:#fff;"></i>
-                        <br><span class="fs-2">変更する</span>
-                    </button>
-                </a>
+                <button class="btn btn-secondary btn-lg w-100" type="submit">
+                    <i class="bi bi-pencil" style="font-size:1.5em; color:#fff;"></i>
+                    <br><span class="fs-2">変更する</span>
+                </button>
             </div>
             <div class="col">
                 <a href="/users/show/{{Auth::id()}}">
