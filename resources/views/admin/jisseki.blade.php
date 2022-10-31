@@ -60,7 +60,7 @@
 
             <div class="row">
                 <div class="col mt-1" style="margin-bottom:-15px">
-                    <form class="d-flex" action="/admin/jisseki/{{Auth::id()}}" method="get">
+                    <form class="d-flex" action="{{ route('admin.jisseki', ['id'=> auth()->id()]) }}" method="get">
                         <div class="col-3 d-flex">
                             <p>表示対象：</p>
                             <select class="form-control form-select w-100 col" name="atname" aria-label="勤怠実績表示対象者を表示">
